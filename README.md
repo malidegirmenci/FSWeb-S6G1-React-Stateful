@@ -36,9 +36,9 @@ NOT: Tavsiye edilen `node version 18` ile kurulum yapabilirsiniz.
 
 #### Adımlar
 
-- [ ] `src/components` içindeki tüm bileşenlere işlevsellik katacaksınız.
-- [ ] Bileşenler üzerinde **Chrome'da görüntülendikleri sırayla** çalışın (kolaydan zora doğru).
-- [ ] Her dosya bir video bağlantısı ve şu şekilde özetlenebilecek bir dizi talimat içerir:
+- [X] `src/components` içindeki tüm bileşenlere işlevsellik katacaksınız.
+- [X] Bileşenler üzerinde **Chrome'da görüntülendikleri sırayla** çalışın (kolaydan zora doğru).
+- [X] Her dosya bir video bağlantısı ve şu şekilde özetlenebilecek bir dizi talimat içerir:
   - Bitmiş bileşenin demosunun videosunu izleyin ve ne kadar state'e ihtiyaç duyulduğunu düşünün.
   - State hook'u kullanarak gerekli bileşen statelerini oluşturun.
   - JSX'i sabit kodlanmış veriler yerine durumdan türetilen bilgileri gösterecek şekilde düzeltin.
