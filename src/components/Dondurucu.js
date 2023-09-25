@@ -17,7 +17,7 @@ ADIM 0:
   Aşağıdaki bileşeni inceleyerek ve state hookunu import ederek başlayın.
 
 ADIM 1:
-  State hookunu kullanara, bir 'döndürücüAçık', 'setdöndürücüAcik' çifti oluşturun.
+  State hookunu kullanarak, bir 'döndürücüAçık', 'setdöndürücüAcik' çifti oluşturun.
   'döndürücüAçık' true olarak yüklendiğinde döndürücü görünür olacak.
 
 ADIM 2:
@@ -35,23 +35,35 @@ ADIM 4:
   "not" için kullandığımız operatörü hatırlıyor musunuz??
 */
 
-import React from 'react'; /* STEP 0 */
+import React, { useState } from 'react'; /* STEP 0 */
 
 export default function Dondurucu() {
-/* ADIM 1 */
+  const [döndürücüAcik, setdöndürücüAcik] = useState(true);
 
   const toggleDondurucu = () => {
   /* ADIM 4 */
+    if(döndürücüAcik === true){
+      setdöndürücüAcik(false);
+    }else{
+      setdöndürücüAcik(true);
+    }
+    
   };
-
+  const textBtn = () => {
+    if(döndürücüAcik === true){
+      return 'Gizle'
+    }else{
+      return 'Göster'
+    }
+  }
   return (
     <div className='widget-spinner container'>
       <h2>Döndürücü</h2>
       {
-        true && <div id='döndürücü' className='spinner'>--+--</div> /* ADIM 2 */
+        döndürücüAcik && <div id='döndürücü' className='spinner'>--+--</div> /* ADIM 2 */
       }
       <button id='toggleDondurucu' onClick={toggleDondurucu}>
-         Gizle {/* STEP 3 */}
+          {textBtn()}
       </button>
     </div>
   );
