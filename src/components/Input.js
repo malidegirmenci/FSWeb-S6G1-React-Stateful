@@ -40,7 +40,6 @@ export default function Input() {
   const inputuDeğiştir = evt => {
     // When the input changes, its whole value can be found inside the event object.
     // Log out the synthetic event object 'evt' and see for yourself.
-    console.log(inputDegeri.length);
     const { value } = evt.target;
     setInputDegeri(value);
   };
@@ -53,7 +52,7 @@ export default function Input() {
     marginBottom: '0.3em',
     color: 'crimson', 
   };
-  stil.color = inputDegeri.length >= 10 ? "crimson" : "royalblue";
+  stil.color = inputDegeri.length > 10 ? "crimson" : "royalblue";
 
   return (
     <div className='widget-input container'>

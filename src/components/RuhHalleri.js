@@ -50,20 +50,13 @@ export default function RuhHalleri() {
   const stil = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'royalblue', 
+    color: ruhHali  === mutluRuhHali ? "royalblue" : "crimson", 
   };
-  function setColor(ruhHali){
-    if(ruhHali === mutluRuhHali){
-      stil.color = "royalblue";
-    }else{
-      stil.color = "crimson";
-    }
-    return stil
-  }
+  
   return (
     <div className='widget-moods container'>
       <h2>RuhHalleri</h2>
-	<div id='ruhHali' style={setColor(ruhHali)}>'{ruhHali}'</div>
+	<div id='ruhHali' style={stil}>{ruhHali}</div>
       <div>
         <button id='mutluEt' onClick={mutluEt}>Mutlu Et</button>
         <button id='uz' onClick={uZ}>Üz</button>

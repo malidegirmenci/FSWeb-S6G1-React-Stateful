@@ -73,11 +73,11 @@ export default function Sayac() {
     }
     return stil
   }
-  function isOddOrEven(sayici){
+  const isOddOrEven = (sayici) => {
     if(sayici % 2 === 0){
-      return "even"
+      return "çift"
     }else{
-      return "odd";
+      return "tek";
     }
   }
 
@@ -85,7 +85,7 @@ export default function Sayac() {
     <div className='widget-counter container'>
       <h2>Sayaç</h2>
       <div id='sayici' style={setColor(sayici)}>
-          Number {sayici} is {isOddOrEven(sayici)}
+          sayı {sayici} {isOddOrEven(sayici)}
       </div>
       <div>
         <button id='artirici' onClick={artirici}>Artırıcı</button>

@@ -42,12 +42,12 @@ export default function Dondurucu() {
 
   const toggleDondurucu = () => {
   /* ADIM 4 */
-    if(döndürücüAcik === true){
+    /*if(döndürücüAcik === true){
       setdöndürücüAcik(false);
     }else{
       setdöndürücüAcik(true);
-    }
-    
+    }*/
+    setdöndürücüAcik(!döndürücüAcik)
   };
   const textBtn = () => {
     if(döndürücüAcik === true){
