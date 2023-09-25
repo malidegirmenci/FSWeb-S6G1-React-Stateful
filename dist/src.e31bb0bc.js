@@ -29067,9 +29067,8 @@ function Input() {
   var stil = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'crimson' /* ADIM 2 */
+    color: 'crimson'
   };
-
   stil.color = inputDegeri.length >= 10 ? "crimson" : "royalblue";
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "widget-input container"
