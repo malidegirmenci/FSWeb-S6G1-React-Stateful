@@ -19,14 +19,14 @@ Bu proje `src/components` klasörü içinde bir kaç React bileşeni(component) 
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Projeyi forklayarak bir kopyasını oluşturun.
-- [ ] Terminali kullanarak kendi forkunuzu klonlayın. 
-- [ ] Projenin ana klasörüne gidin.
-- [ ] `npm install` komutunu kullanarak projenin dependencylerini indirin.  
+- [X] Projeyi forklayarak bir kopyasını oluşturun.
+- [X] Terminali kullanarak kendi forkunuzu klonlayın. 
+- [X] Projenin ana klasörüne gidin.
+- [X] `npm install` komutunu kullanarak projenin dependencylerini indirin.  
 NOT: Tavsiye edilen `node version 18` ile kurulum yapabilirsiniz.
-- [ ] `npm start` komutuyla projeyi başlatın.
-- [ ] `npm test` komutuyla projeyi test edebilirsiniz. (uygulamanın `http://localhost:1234` 'da çalışıyor halde olması lazım)
-- [ ] Commitinizi pushlayın: `git push origin main`.
+- [X] `npm start` komutuyla projeyi başlatın.
+- [X] `npm test` komutuyla projeyi test edebilirsiniz. (uygulamanın `http://localhost:1234` 'da çalışıyor halde olması lazım)
+- [X] Commitinizi pushlayın: `git push origin main`.
 
 ### Görev 2a: Minimum Uygulanabilir Ürün
 
